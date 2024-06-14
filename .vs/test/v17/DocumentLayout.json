@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\geome\\OneDrive\\Bureau\\personal\\test\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{54ADA415-CED9-4EA0-9851-BCE0A85FDB37}|test.csproj|c:\\users\\geome\\onedrive\\bureau\\personal\\test\\mainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54ADA415-CED9-4EA0-9851-BCE0A85FDB37}|test.csproj|solutionrelative:mainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54ADA415-CED9-4EA0-9851-BCE0A85FDB37}|test.csproj|c:\\users\\geome\\onedrive\\bureau\\personal\\test\\wordgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54ADA415-CED9-4EA0-9851-BCE0A85FDB37}|test.csproj|solutionrelative:wordgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainScreen.cs",
+              "DocumentMoniker": "C:\\Users\\geome\\OneDrive\\Bureau\\personal\\test\\MainScreen.cs",
+              "RelativeDocumentMoniker": "MainScreen.cs",
+              "ToolTip": "C:\\Users\\geome\\OneDrive\\Bureau\\personal\\test\\MainScreen.cs",
+              "RelativeToolTip": "MainScreen.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T15:51:55.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WordGenerator.cs",
+              "DocumentMoniker": "C:\\Users\\geome\\OneDrive\\Bureau\\personal\\test\\WordGenerator.cs",
+              "RelativeDocumentMoniker": "WordGenerator.cs",
+              "ToolTip": "C:\\Users\\geome\\OneDrive\\Bureau\\personal\\test\\WordGenerator.cs",
+              "RelativeToolTip": "WordGenerator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T15:33:40.054Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
