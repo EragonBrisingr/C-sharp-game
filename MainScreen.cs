@@ -25,9 +25,43 @@ namespace test
 
             WordGenerator generate = new WordGenerator();
 
-            string gen = generate.ThreeLetters();
+            string word = generate.ThreeLetters();
+            int letters;
 
-            Console.WriteLine($"{gen} was generated!");
+            while (true)
+            {
+                Console.WriteLine("Enter the number of letters: ");
+                try
+                {
+                    letters = Convert.ToInt32(Console.ReadLine());
+                }
+                catch
+                {
+                    continue;
+                }
+                break;
+            }
+
+            bool win = false;
+
+            for(int i = 0; i < letters; i++)
+            {
+                if (win)
+                {
+                    break; ;
+                }
+                Console.WriteLine($"You have {letters-i} attempts left!");
+                Console.WriteLine("Guess the word:");
+                string guess = Console.ReadLine();
+
+                if(guess == word)
+                {
+                    Console.WriteLine("You won!");
+                    break;
+                }
+            }
+            Console.WriteLine("You lost!");
+
 
         }
 
