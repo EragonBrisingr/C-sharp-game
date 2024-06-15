@@ -11,7 +11,7 @@ namespace test
 
         public string ThreeLetters()
         {
-
+            //array of three letter words
             string[] words = [
                 "tie",
                 "bye",
@@ -30,6 +30,26 @@ namespace test
             return words[index];
         }
 
+        public string FourLetters()
+        {
+            //array of three letter words
+            string[] words = [
+                "wolf",
+                "wool",
+                "aide",
+                "liar",
+                "bear",
+                "load",
+                "face",
+                "hand",
+                "love"];
+
+            Random random = new Random();
+
+            int index = random.Next(words.Length);
+
+            return words[index];
+        }
 
     }
 }

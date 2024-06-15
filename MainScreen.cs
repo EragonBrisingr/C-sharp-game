@@ -25,12 +25,14 @@ namespace test
 
             WordGenerator generate = new WordGenerator();
 
-            string word = generate.ThreeLetters();
+            
             int letters;
+            string word;
 
             while (true)
             {
                 Console.WriteLine("Enter the number of letters: ");
+                //try catch in case user inputs anything other than a digit
                 try
                 {
                     letters = Convert.ToInt32(Console.ReadLine());
@@ -42,29 +44,28 @@ namespace test
                 break;
             }
 
-            bool win = false;
+            GameLogic game = new GameLogic();
 
-            for(int i = 0; i < letters; i++)
+            switch (letters)
             {
-                if (win)
-                {
-                    break; ;
-                }
-                Console.WriteLine($"You have {letters-i} attempts left!");
-                Console.WriteLine("Guess the word:");
-                string guess = Console.ReadLine();
-
-                if(guess == word)
-                {
-                    Console.WriteLine("You won!");
+                case 3:
+                    word = generate.ThreeLetters();
+                    game.gameFunction(letters, word);
                     break;
-                }
+                case 4:
+                    word = generate.FourLetters();
+                    game.gameFunction(letters, word);
+                    break;
             }
-            Console.WriteLine("You lost!");
 
+            
 
+            
+
+            
         }
 
+        
 
     }
 }
