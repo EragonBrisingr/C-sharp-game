@@ -10,14 +10,14 @@ namespace test
     {
 
 
-        public void gameFunction(int letters, string word)
+        public bool gameFunction(int letters, string word)
         {
             Console.BackgroundColor = ConsoleColor.Red;
             Console.WriteLine(word);
             Console.ResetColor();
             bool win = false;
             //first loop for number of attempts
-            for (int i = 0; i < letters; i++)
+            for (int i = 0; i < letters+1; i++)
             {
                 Console.WriteLine($"You have {letters - i} attempts left!");
                 Console.WriteLine("Guess the word:");
@@ -34,9 +34,8 @@ namespace test
                         Console.BackgroundColor = ConsoleColor.Green;
                         Console.WriteLine(guess);
                         Console.ResetColor();
-                        Console.WriteLine("You won!");
                         win = true;
-                        break;
+                        return win;
                     }
                     else if (guess[j] == word[j])
                     {
@@ -50,14 +49,8 @@ namespace test
                     }
                 }
                 Console.WriteLine();
-                if (win)
-                {
-                    Console.WriteLine("You won!");
-                    break;
-                }
             }
-
-             Console.WriteLine("You lost!");
+            return win;
         }
 
 
