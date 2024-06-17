@@ -13,6 +13,8 @@ namespace test
         {
 
             Console.WriteLine("Hello world!");
+            
+            
             //project:
             //wordle
             //game mechanics: choose a word length then "generate" word. let user try different words. mark green letters in correct place, mark yellow 
@@ -56,16 +58,7 @@ namespace test
                     word = generate.FourLetters();
                     game.gameFunction(letters, word);
                     break;
-            }
-
-            
-
-            
-
-            
+            }            
         }
-
-        
-
     }
 }

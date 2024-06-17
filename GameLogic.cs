@@ -14,6 +14,7 @@ namespace test
         {
             bool win = false;
 
+            //first loop for number of attempts
             for (int i = 0; i < letters; i++)
             {
                 if (win)
@@ -22,13 +23,28 @@ namespace test
                 }
                 Console.WriteLine($"You have {letters - i} attempts left!");
                 Console.WriteLine("Guess the word:");
-                string guess = Console.ReadLine();
+                
+                Console.BackgroundColor = ConsoleColor.Red;
+                Console.WriteLine(word);
+                Console.ResetColor();
 
-                if (guess == word)
+                string guess = Console.ReadLine();
+                
+                //second loop to check characters
+                for (int j = 0; j < guess.Length; j++)
                 {
-                    Console.WriteLine("You won!");
-                    break;
+                    if (guess[j] == word[j])
+                    {
+                        Console.BackgroundColor = ConsoleColor.Green;
+                        Console.Write(guess[j]);
+                        Console.ResetColor();
+                    }
+                    else
+                    {
+                        Console.Write(guess[j]);
+                    }
                 }
+                Console.WriteLine();                
             }
             Console.WriteLine("You lost!");
         }
