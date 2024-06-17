@@ -40,6 +40,14 @@ namespace test
                     else if (guess[j] == word[j])
                     {
                         Console.BackgroundColor = ConsoleColor.Green;
+                        Console.ForegroundColor = ConsoleColor.White;
+                        Console.Write(guess[j]);
+                        Console.ResetColor();
+                    }
+                    else if(word.Contains(guess[j]))
+                    {
+                        Console.BackgroundColor = ConsoleColor.DarkYellow;
+                        Console.ForegroundColor = ConsoleColor.White;
                         Console.Write(guess[j]);
                         Console.ResetColor();
                     }
